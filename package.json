@@ -1,15 +1,28 @@
 {
   "name": "country-list-spanish",
   "version": "0.1.0",
-  "description": "",
-  "keywords": [],
-  "homepage": "",
-  "bugs": {},
+  "description": "Get the country name in Spanish for any ISO 3166 country code, and vice versa",
+  "keywords": [
+    "country list",
+    "countries",
+    "country names",
+    "Spanish",
+    "ISO 3166-1-alpha-2"
+  ],
+  "homepage": "https://github.com/rubenvar/country-list-spanish",
+  "bugs": {
+    "url": "https://github.com/rubenvar/country-list-spanish/issues"
+  },
   "license": "MIT",
   "author": "Rubén Vara <hey@rubenvara.io> (https://rubenvara.io)",
   "main": "",
-  "repository": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rubenvar/country-list-spanish.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  }
+  },
+  "dependencies": {},
+  "devDependencies": {}
 }
