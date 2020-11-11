@@ -1,0 +1,15 @@
+{
+  "name": "country-list-spanish",
+  "version": "0.1.0",
+  "description": "",
+  "keywords": [],
+  "homepage": "",
+  "bugs": {},
+  "license": "MIT",
+  "author": "Rubén Vara <hey@rubenvara.io> (https://rubenvara.io)",
+  "main": "",
+  "repository": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
