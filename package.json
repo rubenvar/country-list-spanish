@@ -21,8 +21,11 @@
     "url": "git://github.com/rubenvar/country-list-spanish.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --watch"
   },
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1"
+  }
 }
