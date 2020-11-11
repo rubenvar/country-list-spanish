@@ -1,17 +1,17 @@
-import countries from './countries.json';
+const countries = require('./countries.json');
+
+const countriesObject = {};
+const codesObject = {};
+countries.forEach(obj => (countriesObject[obj.code] = obj.country));
+countries.forEach(obj => (codesObject[obj.country] = obj.code));
 
 // return the country name for a given code
-export function getCountry(code) {
-  return countries.find(obj => obj.code === code)?.country;
-}
-
+const getCountry = code => countriesObject[code];
 // return the code for a given country name
-export function getCode(country) {
-  return countries.find(obj => obj.country === country)?.code;
-}
+const getCode = country => codesObject[country];
 
 // return an array or an object (with codes as keys) of all countries
-export function getCountries(props = {}) {
+function getCountries(props = {}) {
   // default behaviour: format === 'object', extended === false
   const { format, extended } = props;
   let allCountries = countries;
@@ -27,7 +27,7 @@ export function getCountries(props = {}) {
 }
 
 // return an array or an object (with countries as keys) of all country codes
-export function getCodes(props = {}) {
+function getCodes(props = {}) {
   const { format, extended } = props;
   let allCountries = countries;
 
@@ -40,3 +40,8 @@ export function getCodes(props = {}) {
   }
   return allCountries.map(obj => obj.code);
 }
+
+exports.getCountry = getCountry;
+exports.getCode = getCode;
+exports.getCountries = getCountries;
+exports.getCodes = getCodes;
