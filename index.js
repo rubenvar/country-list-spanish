@@ -12,13 +12,13 @@ const getCode = country => codesObject[country];
 
 // return an array or an object (with codes as keys) of all countries
 function getCountries(props = {}) {
-  // default behaviour: format === 'object', extended === false
-  const { format, extended } = props;
+  // default behaviour: object === false, extended === false
+  const { object, extended } = props;
   let allCountries = countries;
 
   if (!extended) allCountries = countries.filter(obj => !obj.extended);
 
-  if (format === 'object') {
+  if (object) {
     const result = {};
     allCountries.forEach(obj => (result[obj.code] = obj.country));
     return result;
@@ -28,12 +28,12 @@ function getCountries(props = {}) {
 
 // return an array or an object (with countries as keys) of all country codes
 function getCodes(props = {}) {
-  const { format, extended } = props;
+  const { object, extended } = props;
   let allCountries = countries;
 
   if (!extended) allCountries = countries.filter(obj => !obj.extended);
 
-  if (format === 'object') {
+  if (object) {
     const result = {};
     allCountries.forEach(obj => (result[obj.country] = obj.code));
     return result;
