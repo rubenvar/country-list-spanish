@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file.
 
+## [Unreleased]
+
+## [0.3.0] - 2022-03-14
+
+### Added
+
+- Added CQ exceptional code.
+
+### Changed
+
+- Updated readme.
+- Updated tests.
+- Updated dev dependencies.
+
+### Fixed
+
+- Fixed alphabetical order in exceptional codes.
+- Fixed EZ code ("Europa" ⟶ "Eurozona").
+
 ## [0.2.1] - 2020-11-23
 
 ### Changed
