@@ -254,7 +254,7 @@
   { "code": "DG", "country": "Diego García", "extended": true },
   { "code": "EA", "country": "Ceuta y Melilla", "extended": true },
   { "code": "EU", "country": "Unión Europea", "extended": true },
-  { "code": "EZ", "country": "Europa", "extended": true },
+  { "code": "EZ", "country": "Eurozona", "extended": true },
   { "code": "FX", "country": "Francia metropolitana", "extended": true },
   { "code": "IC", "country": "Islas Canarias", "extended": true },
   { "code": "TA", "country": "Tristán de Acuña", "extended": true },
