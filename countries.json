@@ -250,6 +250,7 @@
   { "code": "ZW", "country": "Zimbabue" },
   { "code": "AC", "country": "Isla Ascensión", "extended": true },
   { "code": "CP", "country": "Isla Clipperton", "extended": true },
+  { "code": "CQ", "country": "Isla de Sark", "extended": true },
   { "code": "DG", "country": "Diego García", "extended": true },
   { "code": "EA", "country": "Ceuta y Melilla", "extended": true },
   { "code": "EU", "country": "Unión Europea", "extended": true },
