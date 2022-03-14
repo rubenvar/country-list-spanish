@@ -257,8 +257,8 @@
   { "code": "EZ", "country": "Eurozona", "extended": true },
   { "code": "FX", "country": "Francia metropolitana", "extended": true },
   { "code": "IC", "country": "Islas Canarias", "extended": true },
-  { "code": "TA", "country": "Tristán de Acuña", "extended": true },
   { "code": "SU", "country": "Unión Soviética", "extended": true },
+  { "code": "TA", "country": "Tristán de Acuña", "extended": true },
   { "code": "UK", "country": "Reino Unido", "extended": true },
   { "code": "UN", "country": "Naciones Unidas", "extended": true },
   { "code": "XK", "country": "Kosovo", "extended": true }
