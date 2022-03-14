@@ -4,10 +4,10 @@
 
 Get the country name **in Spanish** for any [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) country code, and vice versa.
 
-The full list of 262 country names and codes in this package is composed as follows:
+The full list of 263 country names and codes in this package is composed as follows:
 
 - 249 [officially assigned](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements) code elements.
-- 12 [exceptionally reserved](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Exceptional_reservations) code elements.
+- 13 [exceptionally reserved](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Exceptional_reservations) code elements.
 - 1 extra code element _added for functionallity_.
 
 ## Installation
@@ -66,17 +66,17 @@ Returns: `array` (default) or `object`, with all the countries in the list.
 
 By **default**, the function returns an array with all 249 official country names in it.
 
-If `{object: true}` is passed as _config_, the function returns an object of **code-country** (key-value) pairs.
+If `{ object: true }` is passed as _config_, the function returns an object of **code-country** (key-value) pairs.
 
-If `{extended: true}` is passed, the _exceptionally reserved_ codes are included in the response.
+If `{ extended: true }` is passed, the _exceptionally reserved_ codes are included in the response.
 
 #### Example
 
 ```js
 const { getCountries } = require("country-list-spanish");
 
-console.log(getCountries()); // logs [Andorra, Emiratos Árabes Unidos, ...], an array of length 249
-console.log(getCountries({ object: true, extended: true })); // logs {AD: "Andorra", AE: "Emiratos Árabes Unidos", ...}, an object with 262 kay-value pairs
+console.log(getCountries()); // logs [ "Andorra", "Emiratos Árabes Unidos", ... ], an array of length 249
+console.log(getCountries({ object: true, extended: true })); // logs { AD: "Andorra", AE: "Emiratos Árabes Unidos", ... }, an object with 263 key-value pairs
 ```
 
 ### getCodes(_config_)
@@ -94,7 +94,8 @@ If `{extended: true}` is passed, the _exceptionally reserved_ codes are included
 ```js
 const { getCodes } = require("country-list-spanish");
 
-console.log(getCodes({ object: true })); // logs {Andorra: "AD", Emiratos Árabes Unidos: "AE", ...}, an object with 249 kay-value pairs
+console.log(getCodes()); // logs [ "AD", "AE", ... ], an array of length 249
+console.log(getCodes({ object: true })); // logs { Andorra: "AD", Emiratos Árabes Unidos: "AE", ... }, an object with 249 key-value pairs
 ```
 
 ### Config object
@@ -102,4 +103,4 @@ console.log(getCodes({ object: true })); // logs {Andorra: "AD", Emiratos Árabe
 | param    | type      | default | feature                                    |
 | -------- | --------- | ------- | ------------------------------------------ |
 | object   | `boolean` | false   | Return an array or an object               |
-| extended | `boolean` | false   | Include the 13 reserved/extra codes or not |
+| extended | `boolean` | false   | Include the 14 reserved/extra codes or not |
