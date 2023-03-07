@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [0.3.1] - 2023-03-07
+
+### Fixed
+
+- Fixed GB name.
+
 ## [0.3.0] - 2022-03-14
 
 ### Added
