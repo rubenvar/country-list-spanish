@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [1.0.0-0] - 2023-03-08
+
 This is tagged as a **major release** as the code has been refactored, files relocated, etc. However, everything should work fine as no changes were done to the exported functions' syntax.
 
 ### Changed

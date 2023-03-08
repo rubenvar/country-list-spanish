@@ -1,6 +1,6 @@
 {
   "name": "country-list-spanish",
-  "version": "0.3.2",
+  "version": "1.0.0-0",
   "description": "Get the country name in Spanish for any ISO 3166 country code, and vice versa",
   "keywords": [
     "countries",
