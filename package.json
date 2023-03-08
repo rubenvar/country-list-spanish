@@ -29,7 +29,8 @@
   "scripts": {
     "dev": "tsc --watch",
     "build": "tsc",
-    "test": "jest --config jestconfig.json"
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "eslint",
   },
   "devDependencies": {
     "@release-it/keep-a-changelog": "^3.1.0",
