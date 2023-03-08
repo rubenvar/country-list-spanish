@@ -24,11 +24,19 @@
     "url": "git://github.com/rubenvar/country-list-spanish.git"
   },
   "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc",
     "test": "mocha --watch"
   },
   "devDependencies": {
     "@release-it/keep-a-changelog": "^3.1.0",
+    "@typescript-eslint/eslint-plugin": "^5.54.1",
+    "@typescript-eslint/parser": "^5.54.1",
     "chai": "^4.3.6",
-    "mocha": "^9.2.2"
+    "eslint": "^8.35.0",
+    "eslint-config-prettier": "^8.7.0",
+    "mocha": "^9.2.2",
+    "prettier": "^2.8.4",
+    "typescript": "^4.9.5"
   }
 }
