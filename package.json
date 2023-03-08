@@ -29,7 +29,7 @@
   "scripts": {
     "dev": "tsc --watch",
     "build": "tsc",
-    "test": "mocha --watch"
+    "test": "jest --config jestconfig.json"
   },
   "devDependencies": {
     "@release-it/keep-a-changelog": "^3.1.0",
