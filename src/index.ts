@@ -1,4 +1,4 @@
-const countries = require('./countries.json');
+import countries from './countries.json';
 
 const countriesObject = {};
 const codesObject = {};
@@ -40,8 +40,3 @@ function getCodes(props = {}) {
   }
   return allCountries.map(obj => obj.code);
 }
-
-exports.getCountry = getCountry;
-exports.getCode = getCode;
-exports.getCountries = getCountries;
-exports.getCodes = getCodes;
