@@ -18,6 +18,7 @@
   "license": "MIT",
   "author": "Rubén Vara <hey@rubenvara.io> (https://rubenvara.io)",
   "main": "index.js",
+  "types": "index.d.ts",
   "repository": {
     "type": "git",
     "url": "git://github.com/rubenvar/country-list-spanish.git"
