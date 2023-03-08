@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [0.3.2] - 2023-03-08
+
+### Fixed
+
+- Fixed MK name.
+
 ## [0.3.1] - 2023-03-07
 
 ### Fixed
