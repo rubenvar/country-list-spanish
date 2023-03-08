@@ -34,6 +34,8 @@ If the code parameter is left empty or it's not in the list, returns `undefined`
 
 ```js
 const { getCountry } = require("country-list-spanish");
+// or ES6
+import { getCountry } from "country-list-spanish";
 
 console.log(getCountry("PM")); // logs 'San Pedro y Miquelón'
 console.log(getCountry("IC")); // logs 'Islas Canarias'
@@ -52,6 +54,8 @@ If the country parameter is left empty or it's not in the list, returns `undefin
 
 ```js
 const { getCode } = require("country-list-spanish");
+// or ES6
+import { getCode } from "country-list-spanish";
 
 console.log(getCode("San Pedro y Miquelón")); // logs 'PM'
 console.log(getCode("Islas Canarias")); // logs 'IC'
@@ -74,6 +78,8 @@ If `{ extended: true }` is passed, the *exceptionally reserved* codes are includ
 
 ```js
 const { getCountries } = require("country-list-spanish");
+// or ES6
+import { getCountries } from "country-list-spanish";
 
 console.log(getCountries()); // logs [ "Andorra", "Emiratos Árabes Unidos", ... ], an array of length 249
 console.log(getCountries({ object: true, extended: true })); // logs { AD: "Andorra", AE: "Emiratos Árabes Unidos", ... }, an object with 262 key-value pairs
@@ -93,6 +99,8 @@ If `{extended: true}` is passed, the *exceptionally reserved* codes are included
 
 ```js
 const { getCodes } = require("country-list-spanish");
+// or ES6
+import { getCodes } from "country-list-spanish";
 
 console.log(getCodes()); // logs [ "AD", "AE", ... ], an array of length 249
 console.log(getCodes({ object: true })); // logs { Andorra: "AD", Emiratos Árabes Unidos: "AE", ... }, an object with 249 key-value pairs

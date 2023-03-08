@@ -4,11 +4,15 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+This is tagged as a **major release** as the code has been refactored, files relocated, etc. However, everything should work fine as no changes were done to the exported functions' syntax.
+
+### Changed
+
 - Refactor main code to TS.
-- Replace mocha/chai with jest.
+- Replace `mocha` and `chai` with `jest`.
 - Fix countries list (remove duplicated name, code UK).
-- Try to add eslint.
-- Relocate json file.
+- Add eslint.
+- Relocate files.
 - Add TS configs.
 - Add `release-it`.
 
