@@ -259,7 +259,6 @@ export const countries = [
   { code: 'IC', country: 'Islas Canarias', isExtended: true },
   { code: 'SU', country: 'Unión Soviética', isExtended: true },
   { code: 'TA', country: 'Tristán de Acuña', isExtended: true },
-  { code: 'UK', country: 'Reino Unido', isExtended: true },
   { code: 'UN', country: 'Naciones Unidas', isExtended: true },
   { code: 'XK', country: 'Kosovo', isExtended: true },
 ] as const;

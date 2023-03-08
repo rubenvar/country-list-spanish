@@ -1,6 +1,6 @@
 import { getCountry, getCode, getCountries, getCodes } from '../index';
 
-test('getCountry function', () => {
+describe('getCountry function', () => {
   it('returns a country name from a code', () => {
     expect(getCountry('PM')).toEqual('San Pedro y Miquelón');
   });
@@ -39,7 +39,7 @@ describe('getCountries function', () => {
   it('with extended = true, returns an array of all country names (including exceptional)', () => {
     const config = { extended: true };
     expect(Array.isArray(getCountries(config))).toBe(true);
-    expect(getCountries(config)).toHaveLength(263);
+    expect(getCountries(config)).toHaveLength(262);
     expect(getCountries(config)).toContain('San Pedro y Miquelón');
     expect(getCountries(config)).toContain('Islas Canarias');
     expect(getCountries()).not.toContain('El país de Nunca Jamás');
@@ -56,7 +56,7 @@ describe('getCountries function', () => {
   it('with object = true & extended = true, returns an object of all codes-country names', () => {
     const config = { object: true, extended: true };
     expect(typeof getCountries(config)).toBe('object');
-    expect(Object.keys(getCountries(config))).toHaveLength(263);
+    expect(Object.keys(getCountries(config))).toHaveLength(262);
     expect(getCountries(config)).toHaveProperty('PM');
     expect(getCountries(config)).toHaveProperty('IC');
     expect(getCountries(config)).not.toHaveProperty('NJ');
@@ -76,7 +76,7 @@ describe('getCodes function', () => {
   it('with extended = true, returns an array of all codes (including exceptional)', () => {
     const config = { extended: true };
     expect(Array.isArray(getCodes(config))).toBe(true);
-    expect(getCodes(config)).toHaveLength(263);
+    expect(getCodes(config)).toHaveLength(262);
     expect(getCodes(config)).toContain('PM');
     expect(getCodes(config)).toContain('IC');
     expect(getCodes(config)).not.toContain('NJ');
@@ -93,7 +93,7 @@ describe('getCodes function', () => {
   it('with object = true & extended = true, returns an object of all country names-codes', () => {
     const config = { object: true, extended: true };
     expect(typeof getCodes(config)).toBe('object');
-    expect(Object.keys(getCodes(config))).toHaveLength(263);
+    expect(Object.keys(getCodes(config))).toHaveLength(262);
     expect(getCodes(config)).toHaveProperty('San Pedro y Miquelón');
     expect(getCodes(config)).toHaveProperty('Islas Canarias');
     expect(getCodes(config)).not.toHaveProperty('El país de Nunca Jamás');

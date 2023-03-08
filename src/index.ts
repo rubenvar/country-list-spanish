@@ -1,4 +1,4 @@
-// export const hello = (name: string) => `Hello ${name}!`;
+// TODO lots of duplicated code
 
 // import countries from './countries.json';
 import { countries } from './countries';
@@ -12,8 +12,12 @@ type Country = CountryObject['country'];
 const countriesObject = <Record<Code, Country>>{};
 const codesObject = <Record<Country, Code>>{};
 
-countries.forEach((obj) => (countriesObject[obj.code] = obj.country));
-countries.forEach((obj) => (codesObject[obj.country] = obj.code));
+countries.forEach((obj) => {
+  countriesObject[obj.code] = obj.country;
+});
+countries.forEach((obj) => {
+  codesObject[obj.country] = obj.code;
+});
 
 // return the country name for a given code
 export const getCountry = (code: Code) => countriesObject[code];
@@ -35,8 +39,12 @@ export function getCountries(props: Props = {}) {
   const allCountries = !extended ? countries.filter((obj) => !obj.isExtended) : countries;
 
   if (object) {
+    const result = <Record<Code, Country>>{};
     // if object, build and return the object
-    return allCountries.map((obj) => ({ [obj.code]: obj.country }));
+    allCountries.forEach((obj) => {
+      result[obj.code] = obj.country;
+    });
+    return result;
   }
 
   // return just the country names
@@ -51,8 +59,12 @@ export function getCodes(props: Props = {}) {
   const allCountries = !extended ? countries.filter((obj) => !obj.isExtended) : countries;
 
   if (object) {
+    const result = <Record<Country, Code>>{};
     // if object, build and return the object
-    return allCountries.map((obj) => ({ [obj.country]: obj.code }));
+    allCountries.forEach((obj) => {
+      result[obj.country] = obj.code;
+    });
+    return result;
   }
 
   // return just the country codes
