@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+- Refactor main code to TS.
+- Replace mocha/chai with jest.
+- Fix countries list (remove duplicated name, code UK).
+- Try to add eslint.
+- Relocate json file.
+- Add TS configs.
+- Add `release-it`.
+
 ## [0.3.2] - 2023-03-08
 
 ### Fixed
